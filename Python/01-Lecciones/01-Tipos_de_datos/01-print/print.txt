@@ -1,0 +1,25 @@
+Print es una funcion que viene dentro del lenguaje de python
+
+Explicación:
+La función print() se utiliza para mostrar información al usuario. Es una forma de enviar datos desde tu programa Python a la consola o 
+terminal, donde se está ejecutando el programa. Si quieres mostrar texto, debes ponerlo entre comillas.
+
+print("Hola, mundo!") - esto imprime un texto
+
+print(123) - esto imprime un numero
+
+print("El resultado de 2 + 2 es", 2 + 2) - esto imprime un numero y un texto
+
+print("Soy nuevo en Python. " *4) - Esto imprime la frase que esta entre comillas 4 veces, una al lado de la otra.
+
+Nota: Puedes incorporar dentro de las frases que estan dentro de las comillas, los caracteres \n (backslash y n) para hacer un salto de linea. por ejemplo:
+
+print("\nSoy nuevo en Python. " *4) - Esto imprime la frase que esta entre comillas 4 veces, una debajo de la otra. (esto es una secuencia de escape. 
+                                                                                                                    Más adelante la vemos en profundidad)
+
+Ejercicios para ti:
+
+Imprime tu año de nacimiento en la pantalla.
+Imprime tres cosas que te gusten, cada una separada por una coma.
+Imprime una oración que incluya comillas dentro del texto.
+Imprime una sola frase motivacional y que se muestre 2 veces.

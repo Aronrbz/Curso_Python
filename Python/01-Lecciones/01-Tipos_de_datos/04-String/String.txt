@@ -1,0 +1,72 @@
+Los strings o cadenas de texto en Python son secuencias de caracteres que están encerrados entre comillas simples ('...') o dobles ("..."). 
+Los strings son inmutables, lo que significa que una vez que se crean, no pueden modificarse.
+
+usaremos la siguiente variable para explicar cosas acerca de los strings
+variable = "Python para todos/as"
+
+1. **len(variable)**:
+
+   variable = "Python para todos/as"
+   print(len(variable))  # Resultado: 20
+
+   La función `len()` devuelve la longitud de la cadena, es decir, el número de caracteres en ella.
+
+2. **variable[0]**:
+  
+   print(variable[0])  # Resultado: 'P'
+   Esto imprime el primer carácter de la cadena `variable`.
+
+3. **variable[0:8]**:
+   print(variable[0:8])  # Resultado: 'Python p'
+   Esto imprime los caracteres de la posición 0 a la 7 (8 caracteres en total).
+
+4. **variable[9:]**:
+   print(variable[9:])  # Resultado: 'ara todos/as'
+   Esto imprime todos los caracteres desde la posición 9 hasta el final de la cadena.
+
+5. **`variable[:8]`**:
+   print(variable[:8])  # Resultado: 'Python p'
+   Esto imprime los caracteres desde el comienzo de la cadena hasta la posición 7.
+
+6. **variable[:]**:
+   print(variable[:])  # Resultado: 'Python para todos/as'
+   Esto crea y imprime una copia completa de la cadena.
+
+7. **Formato de strings con f"{}"**:
+    nombre = "Aron"
+    apellido= "Bustos"
+    nombre_completo = f"{nombre[0]}{"k"} {40+7}"  # Resultado: 'AK 47'
+    print(nombre_completo)
+
+   Aquí se muestra el primer carácter de `nombre`, le agrega la letra K, y el resultado de la expresión `40+7`.
+
+**Métodos de strings y sus resultados**:
+
+animal = "  la gaTIta es feLIz     "
+animal2 = "la gaTIta es feLIz"
+print(animal.upper())  # Resultado: '  LA GATITA ES FELIZ     '
+print(animal.lower())  # Resultado: '  la gatita es feliz     '
+print(animal2.capitalize())  # Resultado: 'La gatita es feliz'
+print(animal.title())  # Resultado: '  La Gatita Es Feliz     '
+print(animal.strip())  # Resultado: 'la gaTIta es feLIz'
+print(animal.strip().capitalize())  # Resultado: 'La gatita es feliz'
+print(animal.lstrip())  # Resultado: 'la gaTIta es feLIz     '
+print(animal.rstrip())  # Resultado: '  la gaTIta es feLIz'
+print(animal.find("ta"))  # Resultado: 9 (primer índice de 'ta')
+print(animal.find("x"))  # Resultado: -1 ('x' no está en la cadena)
+print(animal.replace("es", "será"))  # Resultado: '  la gaTIta será feLIz     '
+print("TI" in animal)  # Resultado: True
+print("TI" not in animal)  # Resultado: False
+print("tito" in animal)  # Resultado: False
+print("tito" not in animal)  # Resultado: True
+
+
+Estos métodos y funciones te permiten manipular cadenas de texto para adecuarlas a las necesidades de tu programa. 
+Intenta usar estos ejemplos para entender mejor cómo funcionan.
+
+Ahora, algunos ejercicios para ti, combinando lo que hemos visto:
+
+Concatenación           : Crea dos variables parte1 y parte2 que contengan "Python " y "es divertido", respectivamente. Concaténalas y muestra el mensaje completo.
+Métodos de strings      : Dado el string " Python es poderoso ", utilízalo con los métodos .strip() y .upper() y muestra el resultado.
+Indexación y slicing    : Con el string anterior, imprime solo la palabra "Python", luego imprime la frase sin los espacios del principio y del final.
+Repetición              : Imprime la palabra "Python" 3 veces seguidas con un espacio entre cada repetición.

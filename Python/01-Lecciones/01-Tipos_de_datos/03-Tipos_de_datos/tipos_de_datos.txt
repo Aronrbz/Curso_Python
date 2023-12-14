@@ -1,0 +1,41 @@
+Explicación:
+Python tiene varios tipos de datos estándar que se utilizan comúnmente:
+
+Booleanos: True o False, usados para representar la verdad o la falsedad. Debe escribirse la primera letra con mayusculas. Si escribimos todo en minusculas, no reconocerá 
+el valor Booleano
+
+    es_estudiante = True
+    print(es_estudiante)
+
+    mayor_que = 5>10
+    print(mayor_que)
+
+    menor_que = 9<12
+    print(menor_que)
+
+    numero1 = 9
+    numero2 = 12-3
+    print(numero1 == numero2) el simbolo == es un comparador
+
+
+Números: Incluyen enteros (int), números de punto flotante (float) y números complejos (complex).
+
+    edad = 25  # Esto es un entero (int)
+    altura = 1.75  # Esto es un número de punto flotante (float)
+    print(edad, altura)
+
+
+Cadenas de texto (Strings): Secuencia de caracteres Unicode, se definen entre comillas simples '' o dobles "".
+
+    nombre = "Luis"
+    print(nombre)
+
+
+Python es dinámico en el tipado, lo que significa que no necesitas declarar el tipo de variable al crear una. El tipo se infiere en tiempo de ejecución.
+
+Ejercicios para ti:
+
+Crea una variable de tipo booleano me_gusta_python y asígnale True si te gusta Python o False si no, y luego imprímela.
+Crea una variable pi y asígnale el valor de punto flotante 3.1416. Imprime esta variable junto con el tipo de dato usando la función type(). 
+    (Nota: La función type() es nueva, pero es sencilla; solo devuelve el tipo de dato de la variable que se le pasa como argumento.)
+Crea dos variables nombre y apellido, asígnales tu nombre y apellido, luego imprime tu nombre completo en una línea utilizando la función print().

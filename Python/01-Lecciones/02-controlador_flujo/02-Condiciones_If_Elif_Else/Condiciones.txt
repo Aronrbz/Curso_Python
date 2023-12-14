@@ -1,0 +1,44 @@
+En Python, las condiciones te permiten ejecutar un bloque de código solo si se cumple una determinada condición. Se usan los siguientes términos clave:
+
+if  : Comienza una condición y ejecuta el bloque de código que sigue si la condición es True.
+elif: Abreviatura de "else if". Se utiliza después de un if para probar otra condición si la condición anterior no se cumple.
+else: Captura cualquier caso que no cumpla las condiciones anteriores especificadas por los if y elif.
+
+
+La sintaxis básica es la siguiente:
+
+if condición:
+    # bloque de código ejecutado si condición es True
+elif otra_condición:
+    # bloque de código ejecutado si otra_condición es True
+else:
+    # bloque de código ejecutado si ninguna de las condiciones anteriores es True
+
+Recuerda que Python depende de la indentación para definir el alcance de los bloques de código.
+
+Ejemplos con condiciones:
+
+edad = int(input("Ingrese su edad: "))
+
+if edad >= 65:
+    print("Puedes entrar al cine con un súper descuento")
+elif edad > 55:
+    print("Puedes entrar al cine con un descuento")
+elif edad > 17:
+    print("Puedes entrar al cine")
+else:
+    print("No puedes entrar a la discoteca")
+    print("Vaya a jugar")
+
+print("Listo")
+
+Este ejemplo pide al usuario que ingrese su edad y luego utiliza una serie de condiciones para determinar qué mensaje imprimir.
+
+Ejercicios para ti:
+
+Fácil   : Dada una variable temperatura que representa la temperatura actual en grados Celsius, escribe una condición que imprima "Hace calor" 
+            si la temperatura es mayor a 25 grados y "Hace frío" en caso contrario.
+Medio   : Considerando una variable puntuacion que representa una puntuación de un juego, imprime "¡Nuevo récord!" si puntuacion es mayor que 1000 y "Buena puntuación" 
+            si está entre 500 y 1000. Si no se cumple ninguna, imprime "Sigue intentando".
+Difícil : Escribe una condición que use input para pedir a un usuario que adivine un número almacenado en una variable numero_secreto. Si el usuario adivina el número, 
+            imprime "¡Adivinaste el número secreto!". Si no, imprime "Intenta de nuevo".

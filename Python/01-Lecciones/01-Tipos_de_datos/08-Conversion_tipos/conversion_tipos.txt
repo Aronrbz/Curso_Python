@@ -1,0 +1,37 @@
+La conversión de tipos en Python, también conocida como "casting", se refiere a cambiar un valor de un tipo de dato a otro. 
+Python proporciona varias funciones incorporadas que permiten realizar estas conversiones entre los tipos de datos más comunes.
+
+Funciones de conversión de tipos:
+
+int(x)  : Convierte x a un entero. Si x es una cadena, debe contener un número entero literal.
+float(x): Convierte x a un número de punto flotante. Si x es una cadena, debe contener un número decimal literal o un número entero.
+str(x)  : Convierte x a una cadena de texto.
+bool(x) : Convierte x a un valor booleano. Casi cualquier valor se evalúa como True excepto algunos que se consideran "Falsy", como un string vacío "", el número 0, None, y False mismo.
+
+
+Ejemplos de conversión de tipos:
+
+# Conversión a entero
+numero = int("10")  # Convierte el string "10" a un entero 10
+print(numero)
+
+# Conversión a flotante
+decimal = float("20.5")  # Convierte el string "20.5" a un flotante 20.5
+print(decimal)
+
+# Conversión a cadena
+texto = str(256)  # Convierte el entero 256 a un string "256"
+print(texto)
+
+# Conversión a booleano
+verdadero = bool("Algo")  # Cualquier string no vacío se convierte a True
+falso = bool("")  # Un string vacío se convierte a False
+print(verdadero)
+print(falso)
+
+
+Ejercicios para ti:
+
+Fácil   : Convierte el string "123" a un entero y súmalo a 77.
+Medio   : Toma el valor 3.14159, conviértelo a una cadena y concaténalo al final del string "El valor de pi es aproximadamente ".
+Difícil : Dado el valor "" (cadena vacía), conviértelo a un booleano y demuestra que es considerado False imprimiendo el resultado de negarlo con not.

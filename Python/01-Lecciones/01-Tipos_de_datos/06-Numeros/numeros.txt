@@ -1,0 +1,56 @@
+En Python, hay tres tipos principales de números:
+
+Enteros             (int)       : Números enteros positivos o negativos sin una parte decimal.
+Punto flotante      (float)     : Números reales que incluyen una parte decimal.
+Números complejos   (complex)   : Números que incluyen una parte real y una parte imaginaria.
+
+
+Operadores matemáticos:
+
+Adición         (+)     : Suma dos números.
+Sustracción     (-)     : Resta el segundo número del primero.
+Multiplicación  (*)     : Multiplica dos números.
+División        (/)     : Divide el primer número por el segundo y devuelve un float.
+División entera (//)    : Divide el primer número por el segundo y devuelve la parte entera de la división.
+Módulo          (%)     : Devuelve el resto de la división del primer número por el segundo.
+Exponenciación  (**)    : Eleva el primer número a la potencia del segundo.
+
+
+Operadores de asignación:
+
++=: Suma y asigna.
+-=: Resta y asigna.
+*=: Multiplica y asigna.
+/=: Divide y asigna.
+
+
+Ejemplos:
+
+Operaciones básicas con enteros y floats:
+
+numero = 6  # Entero
+decimal = 4.6  # Float
+imaginario = 2 + 2j  # Número complejo
+
+print(2 + 6)  # 8
+print(2 - 6)  # -4
+print(2 * 6)  # 12
+print(2 / 6)  # 0.3333333333333333
+print(2 // 6)  # 0
+print(6 % 4)  # 2
+print(2 ** 4)  # 16
+
+
+Operadores de asignación:
+
+numero = numero + 3  # 9
+numero += 3  # 12
+numero -= 3  # 9
+numero *= 3  # 27
+numero /= 3  # 9.0
+
+Ejercicios para ti:
+
+Fácil   : Crea una variable suma que almacene la suma de dos números enteros y luego imprime el resultado.
+Medio   : Calcula el área de un círculo con radio 5 y asigna el resultado a una variable area_circulo. Usa la fórmula del área de un círculo A = πr² (puedes aproximar π como 3.1416).
+Difícil : Utiliza números complejos para calcular y imprimir el resultado de (3 + 4j) + (2 - 2j).

@@ -1,0 +1,50 @@
+Las secuencias de escape en Python se utilizan para insertar caracteres que son ilegibles o difíciles de incluir en una cadena de texto. 
+Se representan con una barra invertida (\) seguida de un carácter específico. 
+Aquí hay algunas secuencias de escape comunes y sus usos:
+
+\\: Representa una barra invertida literal.
+\": Representa una comilla doble literal, lo que permite incluir comillas dobles dentro de cadenas delimitadas por comillas dobles.
+\': Representa una comilla simple literal, permitiendo incluir comillas simples en cadenas delimitadas por comillas simples.
+\n: Representa una nueva línea, hace que el cursor se mueva al comienzo de la siguiente línea.
+\t: Representa un tabulador horizontal, se utiliza para crear una tabulación en el texto.
+# : Representa un comentario el cual no afectara la lectura del codigo
+
+ejemplos
+
+Barra invertida literal:
+ruta = "C:\\Usuarios\\Usuario\\Documentos"
+print(ruta)  # C:\Usuarios\Usuario\Documentos
+
+
+Comillas dentro de comillas:
+frase = "Él dijo: \"Python es asombroso\"."
+print(frase)  # Él dijo: "Python es asombroso".
+
+
+Nueva línea:
+poema = "Roses are red,\nViolets are blue,\nPython is fun,\nAnd so are you."
+print(poema)
+# Roses are red,
+# Violets are blue,
+# Python is fun,
+# And so are you.
+
+
+Tabulador:
+lista = "Elemento 1:\tApple\nElemento 2:\tBanana"
+print(lista)
+# Elemento 1:  Apple
+# Elemento 2:  Banana
+
+Comentario:
+MiVariable = 12
+# MiVariable = asñlkdfjopwqaedkjfp´oqakf
+#no pasara nadaaaaaaaaaaaaa
+print(MiVariable)  #la respuesta de print sera 12
+
+Ejercicios para ti:
+
+Imprime una cadena que incluya tanto comillas simples como dobles.
+Crea una cadena que represente una ruta de archivo en tu sistema y úsala con la secuencia de escape para la barra invertida.
+Escribe un mini poema o dos líneas de texto que usen la secuencia de escape de nueva línea (\n).
+Haz una lista de compras con varios elementos, separados por tabuladores (\t).

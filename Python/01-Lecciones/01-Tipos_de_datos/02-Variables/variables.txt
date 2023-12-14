@@ -1,0 +1,38 @@
+Explicación:
+Las variables son como contenedores para almacenar datos. 
+En Python, una variable se define asignándole un valor con el signo igual =. No necesitas declarar una variable con un tipo específico, y el tipo puede cambiar, 
+es decir, Python es dinámico en cuanto al tipo de datos de las variables.
+
+Las variables, son almacenadas en la memoria ram.
+
+Reglas para los nombres de las variables:
+
+Pueden contener solo letras, números y guiones bajos _.
+No pueden comenzar con un número.
+No pueden contener espacios, solo se permite el guión bajo para separar palabras.
+No puedes usar palabras reservadas de Python como if, while, for, etc., como nombres de variables.
+Deben ser breves pero descriptivas (por ejemplo, nombre es mejor que n, a menos que estés trabajando con matemáticas y n signifique algo específico).
+
+Ejemplos:
+
+Básico: Crear una variable para almacenar un nombre.
+
+nombre = "Juan"
+print(nombre)
+
+
+Básico: Crear una variable para almacenar un número
+edad = 30
+print(edad)
+
+Medio: Usar variables para almacenar y luego imprimir una frase.
+primer_nombre = "Ana"
+saludo = "Hola"
+print(saludo, primer_nombre)
+
+
+Ejercicios para ti:
+
+Crea una variable llamada animal y asígnale tu animal favorito, luego úsala en la función print() para mostrarla.
+Crea dos variables, fruta_favorita y numero_favorito. Asigna tus frutas y números favoritos a estas variables y luego imprímelas en una sola línea con la función print().
+Ahora crea una variable llamada mensaje que contenga la frase 'Aprendiendo Python desde cero' y luego úsala con print() para mostrarla.
