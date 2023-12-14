@@ -13,8 +13,19 @@ Empezamos nuestro viaje con la instalación de Python, un proceso sencillo pero 
 ![image](https://github.com/Aronrbz/Curso_Python/assets/101678799/67cd6f4d-755e-43b7-b3b8-2c556357680e)
 
 
+        Ojo con esta info!
+
+
+se recomienda pinchar la opcion "disable path length limit
+
+![image](https://github.com/Aronrbz/Curso_Python/assets/101678799/5a155030-cc09-42ee-93d2-c71096bf9107)
+
+
 
 **puedes visitar https://docs.python.org/es/3.12/tutorial/index.html para ver la documentacion oficial de python.
+
+
+
 
     Herramientas para Escribir y Ejecutar Código Python:
   
