@@ -35,7 +35,7 @@ REPL           : Es un entorno simple pero poderoso para experimentar con Python
 IDE (PyCharm)  : Imagina un estudio de arte con todas las herramientas a tu disposición; eso es PyCharm para Python. Ofrece funcionalidades como autocompletado, depuración y pruebas, que son esenciales para proyectos más grandes y complejos.
 Editores de Texto (VSCode, Sublime Text): Estos son como cuadernos versátiles donde puedes escribir tu código. Son más ligeros que un IDE pero aún ofrecen características útiles como resaltado de sintaxis y soporte para múltiples lenguajes.
 
-# Nuestra herramienta de trabajo (editor de codigo
+# Nuestra herramienta de trabajo (editor de codigo)
 
 para este curso, vamos a utilizar visual studio code, el cual puedes descargar desde su pagina oficial https://code.visualstudio.com/
 al ingresar a esa pagina, veras una interfaz similar a la imagen que esta más abajo.
