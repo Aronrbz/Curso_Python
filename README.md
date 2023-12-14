@@ -8,7 +8,12 @@ Bienvenidos al emocionante mundo de Python, un lenguaje de programación de alto
 
     Comenzando con Python: Instalación y Primeros Pasos:
 
-Empezamos nuestro viaje con la instalación de Python, un proceso sencillo pero crucial. Visita python.org, elige la versión que corresponda a tu sistema operativo y no olvides marcar la opción "Agregar Python al PATH" durante la instalación. Este paso garantiza que puedas ejecutar Python desde cualquier lugar en tu sistema, facilitando su uso.
+Empezamos nuestro viaje con la instalación de Python, un proceso sencillo pero crucial. Visita [python.org](https://www.python.org/downloads/), elige la versión que corresponda a tu sistema operativo y no olvides marcar la opción "Agregar Python al PATH" durante la instalación. Este paso garantiza que puedas ejecutar Python desde cualquier lugar en tu sistema, facilitando su uso.
+
+![image](https://github.com/Aronrbz/Curso_Python/assets/101678799/67cd6f4d-755e-43b7-b3b8-2c556357680e)
+
+
+
 **puedes visitar https://docs.python.org/es/3.12/tutorial/index.html para ver la documentacion oficial de python.
 
     Herramientas para Escribir y Ejecutar Código Python:
