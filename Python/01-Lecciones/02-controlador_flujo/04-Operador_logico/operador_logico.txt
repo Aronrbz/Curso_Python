@@ -1,0 +1,56 @@
+#and, or, not
+
+
+Los operadores lógicos en Python se utilizan para combinar declaraciones condicionales. Son fundamentales para la 
+construcción de condiciones más complejas y la toma de decisiones en tu código. Los tres operadores lógicos básicos 
+son and, or, y not.
+
+and: Este operador devuelve True si ambas declaraciones (a ambos lados de and) son verdaderas. Si una o ambas son falsas,
+    devuelve False.
+
+or: Devuelve True si al menos una de las declaraciones es verdadera. Solo devuelve False si ambas declaraciones son 
+    falsas.
+
+not: Invierte el resultado de la declaración a la que se aplica. Si la declaración es verdadera, not la convierte en 
+    falsa, y viceversa.
+
+Ejemplos de uso de operadores lógicos:
+
+# Ejemplo de 'and'
+edad = 25
+tiene_licencia = True
+
+if edad >= 18 and tiene_licencia:
+    print("Puede conducir.")
+else:
+    print("No puede conducir.")
+
+# Ejemplo de 'or'
+tiene_pasaporte = False
+tiene_cedula = True
+
+if tiene_pasaporte or tiene_cedula:
+    print("Puede viajar.")
+else:
+    print("No puede viajar.")
+
+# Ejemplo de 'not'
+es_dia_laboral = False
+
+if not es_dia_laboral:
+    print("Es fin de semana.")
+else:
+    print("Es un día laboral.")
+
+
+Ejercicios para ti:
+
+Fácil: Supón que una tienda tiene una promoción: si un cliente compra más de 5 artículos o el total de su compra es mayor a 100 dólares,
+    obtiene un descuento. Escribe una condición que use or para determinar si se aplica el descuento.
+
+Medio: Imagina que para ingresar a un evento, se debe tener más de 18 años y una entrada válida. Usa and para escribir una condición que
+    verifique estos requisitos.
+
+Difícil: Escribe una condición usando not para verificar si una persona no cumple con alguna de las siguientes condiciones: tener más de 
+    16 años y menos de 60 años.
+    
