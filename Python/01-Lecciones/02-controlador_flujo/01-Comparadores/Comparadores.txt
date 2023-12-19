@@ -1,11 +1,11 @@
 Los comparadores son operadores que se utilizan para comparar dos valores. En Python, los comparadores fundamentales son:
 
->: Mayor que.
-<: Menor que.
->=: Mayor o igual que.
-<=: Menor o igual que.
-==: Igual que.
-!=: Diferente que.
+> Mayor que.
+< Menor que.
+>= Mayor o igual que.
+<= Menor o igual que.
+== Igual que.
+!= Diferente que.
 
 Cuando usas estos operadores, Python devuelve un valor booleano: True si la comparación es verdadera, o False si es falsa.
 
