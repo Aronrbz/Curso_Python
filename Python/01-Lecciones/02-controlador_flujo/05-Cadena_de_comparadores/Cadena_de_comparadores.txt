@@ -1,0 +1,40 @@
+Las cadenas de comparadores en Python permiten realizar múltiples comparaciones en una sola línea de manera 
+clara y concisa. Esta técnica es útil para verificar si un valor cae dentro de un rango o para hacer 
+comparaciones consecutivas. Es una forma de simplificar las expresiones lógicas sin sacrificar la legibilidad.
+
+Cadenas de Comparadores:
+
+En lugar de usar varios operadores lógicos (and, or), puedes encadenar comparaciones directamente.
+
+Por ejemplo:
+
+a < b < c
+
+La anterior expresión es equivalente a:
+
+a < b and b < c
+
+Ejemplos de Uso:
+
+Verificar si un número está en un rango:
+
+x = 15
+if 10 < x < 20:
+    print("X está entre 10 y 20")
+
+Comparaciones múltiples:
+
+a, b, c = 5, 10, 15
+if a < b < c:
+    print("A es menor que B y B es menor que C")
+
+Ejercicios para ti:
+
+Fácil: Verifica si una variable edad está entre 13 y 19 (adolescente).
+
+Medio: Dada una variable temperatura, verifica si está por debajo del punto de congelación (0 grados Celsius) 
+        o por encima del punto de ebullición del agua (100 grados Celsius).
+
+Difícil: Considera tres variables a, b y c. Comprueba si a es menor que b y si b es igual a c.
+
+Estos ejercicios te ayudarán a entender cómo utilizar las cadenas de comparadores en diferentes situaciones.
