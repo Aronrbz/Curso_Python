@@ -1,0 +1,48 @@
+El bucle while en Python permite ejecutar un bloque de código repetidamente mientras se cumpla una condición dada.
+Es especialmente útil cuando no sabes de antemano cuántas veces necesitas iterar.
+
+Características del bucle while en Python:
+
+1.-Sintaxis básica:
+
+while condicion:
+    # Código a ejecutar mientras la condición sea verdadera
+
+2.-La condición se evalúa antes de cada iteración: Si la condición es verdadera (True), el código dentro del bucle
+se ejecuta. Si es falsa (False), el bucle termina.
+
+3.-Importancia de modificar la variable de condición dentro del bucle: Para evitar bucles infinitos, es crucial que el 
+código dentro del bucle while cambie alguna variable que afecte la condición, llevándola eventualmente a ser False.
+
+Ejemplos prácticos:
+
+1.-Contar hasta un número:
+
+contador = 0
+while contador < 5:
+    print(contador)
+    contador += 1  # Muy importante para evitar un bucle infinito
+
+2.-Esperar una entrada específica:
+entrada = ""
+while entrada.lower() != "salir":
+    entrada = input("Escribe 'salir' para terminar: ")
+
+3.- Combinar while con if:
+numero = 0
+while numero <= 10:
+    if numero % 2 == 0:
+        print(f"{numero} es par")
+    else:
+        print(f"{numero} es impar")
+    numero += 1
+
+Ejercicios para ti:
+
+Fácil: Escribe un bucle while que comience con x = 0 e imprima x mientras x sea menor a 5.
+
+Medio: Utiliza un bucle while para crear un pequeño programa que pida al usuario que ingrese números hasta que 
+        escriba "stop". Imprime cada número ingresado.
+
+Difícil: Haz un bucle while que sume números del 1 al 10 (inclusive). Utiliza una variable para llevar la cuenta 
+        de la suma y otra para llevar la cuenta del número actual. Imprime la suma total después de salir del bucle.

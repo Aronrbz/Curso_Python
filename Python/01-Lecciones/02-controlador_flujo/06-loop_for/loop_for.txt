@@ -1,0 +1,52 @@
+Bucle for
+
+El bucle for en Python es una herramienta que permite iterar sobre una secuencia 
+(que puede ser una lista, una tupla, un diccionario, un conjunto o una cadena). Es una forma eficiente de ejecutar 
+un bloque de código varias veces, para cada elemento en la secuencia.
+
+Características del bucle for en Python:
+
+Sintaxis básica:
+
+for elemento in secuencia:
+    # Hacer algo con elemento
+
+
+Iteración sobre rangos: Puedes usar la función range() para generar una secuencia de números, que es útil para
+repetir un bloque de código un número específico de veces.
+
+for i in range(5):
+    print(i)  # Imprime números de 0 a 4
+
+Iteración sobre elementos de una secuencia: Puedes iterar directamente sobre los elementos de una secuencia como 
+una lista o una cadena
+
+for letra in "Python":
+    print(letra)  # Imprime cada letra de la palabra "Python"
+
+
+*Iterar sobre una lista:
+frutas = ["manzana", "banana", "cereza"]
+for fruta in frutas:
+    print(fruta)
+
+*Uso de range() para iteraciones controladas:
+for i in range(3, 8):
+    print(i)  # Imprime números de 3 a 7
+
+*Combinando for con if:
+for i in range(10):
+    if i % 2 == 0:
+        print(f"{i} es par")
+    else:
+        print(f"{i} es impar")
+
+
+Ejercicios para ti:
+
+Fácil: Crea una lista de tres colores. Usa un bucle for para imprimir cada color de la lista.
+
+Medio: Usa un bucle for con range() para imprimir todos los números del 1 al 10.
+
+Difícil: Dada una lista de números, usa un bucle for para sumar todos los números de la lista. 
+    Imprime el total al final.

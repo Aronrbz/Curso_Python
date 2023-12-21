@@ -85,7 +85,7 @@ else:
 ## file para ejecutar pruebas para practicar.
 
 calificacion = int(input("Ingrese su calificación enter 0 y 10: "))
-# rango = None
+# rango = ""
 
 # if calificacion >= 9 and calificacion <= 10:
 #     rango = "A"
