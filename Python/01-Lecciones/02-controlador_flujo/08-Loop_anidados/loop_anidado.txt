@@ -1,0 +1,72 @@
+Los loops anidados en Python son bucles que se encuentran dentro de otro bucle. Son útiles para realizar tareas que 
+requieren iteraciones dentro de otras iteraciones, como trabajar con estructuras de datos multidimensionales 
+(por ejemplo, listas de listas) o realizar operaciones más complejas que requieren una iteración secundaria dentro 
+de una principal.
+
+Características de los Loops Anidados:
+
+Bucles for anidados: Puedes tener un bucle for dentro de otro bucle for. Esto es comúnmente utilizado para iterar 
+sobre elementos de listas que están dentro de otra lista.
+
+Bucles while anidados: De manera similar, un bucle while puede contener otro bucle while, o incluso un bucle for.
+
+Control de flujo: El control de flujo (como break y continue) en loops anidados afecta solo al bucle en el que se 
+encuentran.
+
+Ejemplos de Loops Anidados:
+
+for dentro de un for
+
+for i in range(3):  # Bucle externo
+    for j in range(3):  # Bucle interno
+        print(f"({i}, {j})")
+
+Este ejemplo imprimirá pares de coordenadas desde (0, 0) hasta (2, 2).
+
+Combinación de while / for:
+
+i = 0
+while i < 3:  # Bucle externo
+    for j in range(3):  # Bucle interno
+        print(f"({i}, {j})")
+    i += 1
+
+Este código hace algo similar al anterior, pero usando un bucle while como externo.
+
+Combinación de while / while:
+
+i = 0
+while i < 3:
+    j = 0
+    while j < 3:
+        print(f"({i}, {j})")
+        j += 1
+    i += 1
+
+Este código imprimirá pares de números, similar al ejemplo anterior, pero utilizando dos bucles while.
+
+
+Bucle while dentro de un bucle for:
+
+for i in range(3):
+    j = 0
+    while j < 3:
+        print(f"({i}, {j})")
+        j += 1
+
+Aquí, el bucle externo for itera sobre i, y dentro de este, un bucle while itera sobre j.
+
+
+La elección entre for y while para bucles anidados depende de la lógica específica de tu programa y de cómo deseas 
+controlar las iteraciones. for es generalmente preferido cuando se conoce el número de iteraciones de antemano, 
+mientras que while es más adecuado para situaciones en las que la cantidad de iteraciones depende de alguna condición
+que puede cambiar durante la ejecución del bucle.
+
+Fácil: Dada una lista de listas (por ejemplo, [[1, 2], [3, 4], [5, 6]]), usa bucles anidados para imprimir cada 
+    número individual.
+
+Medio: Crea una tabla de multiplicar del 1 al 3 utilizando bucles anidados. Es decir, tu código debería imprimir 
+    el producto de cada par de números entre 1 y 3.
+
+Difícil: Considera una lista de palabras. Usa un bucle anidado para imprimir cada letra de cada palabra en líneas 
+    separadas.

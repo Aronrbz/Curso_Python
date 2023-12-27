@@ -50,9 +50,9 @@
 
 ##############################################
 
-# for i in range(1, 11):  # Bucle externo para las tablas del 1 al 10
+# for i in range(1, 11):  # Bucle externo para las tablas del 1 al 10 (outer for)
 #     print(i)
-#     for j in range(1, 11):  # Bucle interno para cada multiplicación
+#     for j in range(1, 11):  # Bucle interno para cada multiplicación (inner for)
 #         resultado = i * j
 #         print(i, "x", j, "=",resultado)
 
