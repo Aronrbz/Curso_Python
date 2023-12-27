@@ -1,0 +1,32 @@
+Primera Evaluacion de Programación en Python
+
+Preguntas Teóricas
+Tipos de Datos y Variables: ¿Cuál es la diferencia entre los tipos de datos int y float en Python?
+
+Operadores: ¿Qué hace el operador ** en Python?
+
+Strings: Explica brevemente cómo funcionan las secuencias de escape en las cadenas de texto de Python.
+
+Funciones Matemáticas: Nombra al menos dos funciones de la librería math y describe brevemente para qué se utilizan.
+
+Condiciones y Operadores Lógicos: Explica la diferencia entre los operadores == y !=.
+
+
+Problemas Prácticos
+Calculadora Básica:
+Escribe un programa que pida al usuario dos números y muestre la suma, resta, multiplicación, y división de esos 
+números.
+
+Trabajando con Strings:
+Dada la frase "Hola, mundo", escribe un fragmento de código que imprima la longitud de esta frase y luego la misma 
+frase en mayúsculas.
+
+Uso de for y range:
+Utiliza un bucle for y la función range para imprimir los números pares del 1 al 10.
+
+Condiciones Anidadas:
+Escribe un programa que solicite la edad del usuario. Si el usuario tiene más de 18 años, imprime "Adulto". Si tiene 
+entre 13 y 18 años, imprime "Adolescente". Si tiene menos de 13, imprime "Niño".
+
+Loops Anidados:
+Escribe un programa que utilice bucles anidados para imprimir un patrón de asteriscos que forme un cuadrado de 3x3.
