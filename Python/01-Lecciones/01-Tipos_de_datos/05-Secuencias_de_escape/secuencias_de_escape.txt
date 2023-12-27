@@ -1,5 +1,5 @@
-Las secuencias de escape en Python se utilizan para insertar caracteres que son ilegibles o difíciles de incluir en una cadena de texto. 
-Se representan con una barra invertida (\) seguida de un carácter específico. 
+Las secuencias de escape en Python se utilizan para insertar caracteres que son ilegibles o difíciles de incluir en 
+una cadena de texto. Se representan con una barra invertida (\) seguida de un carácter específico. 
 Aquí hay algunas secuencias de escape comunes y sus usos:
 
 \\: Representa una barra invertida literal.
