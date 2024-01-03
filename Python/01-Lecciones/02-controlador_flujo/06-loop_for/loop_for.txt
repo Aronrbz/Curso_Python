@@ -42,6 +42,28 @@ for i in range(10):
         print(f"{i} es impar")
 
 
+for i in range (6):
+    if i % 2 !=0:
+        continue
+print(i)
+
+Aca la palabra continue, a diferencia de Break, continua con la siguiente iteracion del mismo ciclo, pero NO lee
+el codigo que se encuentre abajo de la palabra continue. 
+
+
+for i in range(2, 11, 2):
+    print(i)
+
+La función range en Python puede tomar hasta tres argumentos: range(start, stop, step).
+
+start: El valor inicial de la secuencia de números.
+stop: El límite superior de la secuencia, hasta donde se generan números (pero no se incluye este valor en la 
+    secuencia).
+step: La diferencia entre cada número en la secuencia.
+
+Por ejemplo, en range(2, 11, 2), 2 es el valor inicial, 11 es el límite (no incluido), y 2 es el incremento entre 
+los valores. Por lo tanto, esta función generará los números 2, 4, 6, 8, 10.
+
 Ejercicios para ti:
 
 Fácil: Crea una lista de tres colores. Usa un bucle for para imprimir cada color de la lista.
