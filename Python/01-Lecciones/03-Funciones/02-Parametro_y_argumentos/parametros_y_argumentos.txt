@@ -1,0 +1,65 @@
+Parámetros:
+
+Los parámetros son variables que se definen en la declaración de una función. Actúan como "placeholders" para los 
+datos que se pasan a la función. Los parámetros proporcionan información que una función necesita para realizar su
+tarea.
+
+
+Argumentos:
+
+Los argumentos son los valores reales que se pasan a la función cuando se llama.
+Estos valores se asignan a los parámetros correspondientes de la función.
+
+
+ejemplo, para tener claro que es argumento y que es parametro
+
+def hola (nombre, apellido): <---------- Parametros
+    print("hola mundo!")
+    print(f"bienvenido {nombre} {apellido}")
+
+hola("Juan", "Larraín") <-------------- Argumentos
+hola("humilde", "y cuido") <----------- Argumentos
+
+
+Tipos de Parámetros:
+
+Parámetros Posicionales                 : Son parámetros que deben pasarse a la función en el orden correcto.
+Parámetros Nombrados (Keyword Arguments): Son parámetros a los que se les asigna un valor por defecto. 
+Pueden pasarse a la función en cualquier orden, especificando el nombre del parámetro.
+
+
+Parámetros Variables:
+
+*args: Permite pasar un número variable de argumentos posicionales a una función.
+**kwargs: Permite pasar un número variable de argumentos con palabras clave (key-value pairs) a una función.
+
+
+
+# Ejemplo de parámetros posicionales
+def sumar(a, b):
+    return a + b
+
+# Ejemplo de parámetros nombrados
+def saludar(nombre, mensaje="Hola"):
+    print(f"{mensaje}, {nombre}!")
+
+# Ejemplo de *args
+def sumar_numeros(*args):
+    return sum(args)
+
+# Ejemplo de **kwargs
+def configuracion(**kwargs):
+    for clave, valor in kwargs.items():
+        print(f"{clave}: {valor}")
+
+
+Ejercicios
+Fácil: Escribe una función describir_persona que tome un nombre y una edad (como parámetros posicionales) 
+    y los imprima.
+
+Medio: Crea una función crear_perfil que tome un nombre y luego un número variable de argumentos (*args) 
+    representando los intereses de la persona. La función debe imprimir el nombre y los intereses.
+
+Difícil: Desarrolla una función configurar_perfil que tome un nombre y luego varios argumentos con palabras clave 
+    (**kwargs) para detalles adicionales como 'ocupación', 'ciudad', etc. La función debe imprimir todos los 
+    detalles del perfil.

@@ -1,0 +1,51 @@
+Los argumentos opcionales en las funciones de Python permiten que una función se llame con menos 
+argumentos de los que se especificaron originalmente. Esto se logra asignando valores predeterminados 
+a los parámetros en la definición de la función.
+
+Argumentos Opcionales en Funciones
+Definición de Argumentos Opcionales:
+
+Se definen asignando un valor por defecto al parámetro en la definición de la función. Si el argumento 
+correspondiente a ese parámetro no se pasa durante la llamada de la función, se usa el valor predeterminado.
+
+Los argumentos opcionales deben seguir a los argumentos no opcionales (posicionales) en la definición de la 
+función.
+
+Sintaxis:
+def mi_funcion(param1, param2="valor por defecto"):
+    # Código de la función
+
+Uso de Argumentos Opcionales:
+
+Mejoran la flexibilidad de las funciones.
+Facilitan la legibilidad del código al evitar la sobrecarga de funciones con demasiadas variantes.
+
+# Ejemplo de función con argumento opcional
+def saludar(nombre, saludo="Hola"):
+    print(f"{saludo}, {nombre}!")
+
+saludar("Alice")  # Usa el saludo por defecto "Hola"
+saludar("Bob", "Buenos días")  # Usa el saludo "Buenos días"
+
+# Ejemplo con múltiples argumentos opcionales
+def crear_perfil(nombre, edad=None, ciudad="Desconocida"):
+    print(f"Nombre: {nombre}, Edad: {edad}, Ciudad: {ciudad}")
+
+crear_perfil("Carlos", ciudad="Madrid")
+
+
+Ejercicios
+Fácil: Escribe una función describir_animal que tome el nombre de un animal como parámetro obligatorio 
+    y el tipo de animal como argumento opcional (con "mamífero" como valor predeterminado). 
+    La función debe imprimir ambos datos.
+
+Medio: Crea una función calcular_precio que tome el precio base de un producto como parámetro obligatorio 
+    y un descuento opcional (en porcentaje, con valor predeterminado de 0). La función debe calcular y 
+    devolver el precio final después del descuento.
+
+Difícil: Desarrolla una función construir_direccion que tome como parámetros obligatorios una calle y una 
+    ciudad, y como parámetros opcionales el número de la calle (con un valor predeterminado de "s/n" que 
+    significa 'sin número') y el código postal (opcional). La función debe devolver la dirección completa 
+    como una cadena.
+
+Intenta resolver estos ejercicios y comparte tus soluciones cuando estés listo.
