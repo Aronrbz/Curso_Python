@@ -1,0 +1,65 @@
+Las funciones en Python son bloques de código reutilizables que realizan una tarea específica. Las funciones ayudan 
+    a segmentar tu programa en partes más pequeñas y manejables, y a evitar la repetición de código.
+
+Características de las funciones en Python:
+
+1.- Definición de una Función: Se utiliza la palabra clave def seguida del nombre de la función y paréntesis. 
+Los parámetros (si los hay) van dentro de los paréntesis.
+
+def mi_funcion():
+    # Código de la función
+
+2.- Parámetros y Argumentos: Las funciones pueden tener parámetros, que son variables que se pasan a la función 
+    y que la función puede utilizar.
+
+def saludar(nombre):
+    print(f"Hola, {nombre}!")
+
+3.- Return: Una función puede devolver un valor usando la palabra clave return.
+
+def sumar(a, b):
+    return a + b
+
+4.- Llamada a una Función: Se realiza utilizando el nombre de la función seguido de paréntesis. Si la función requiere
+parámetros, se pasan dentro de los paréntesis.
+
+resultado = sumar(5, 3)
+print(resultado)  # Imprime 8
+
+5.- Valores Predeterminados para Parámetros: Puedes asignar valores predeterminados a los parámetros, que se usarán si 
+no se pasa un argumento para ese parámetro.
+
+def saludar(nombre="mundo"):
+    print(f"Hola, {nombre}!")
+
+Ejemplos Prácticos:
+
+1.- Una Función Simple:
+
+def imprimir_mensaje():
+    print("¡Estoy aprendiendo Python!")
+
+2.- Función con Parámetros:
+
+def elevar_al_cuadrado(numero):
+    return numero * numero
+
+3.- Función con Parámetros Predeterminados:
+
+def describir_animal(animal="gato"):
+    print(f"Mi animal favorito es el {animal}.")
+
+
+Ejercicios para ti:
+
+Fácil: Escribe una función llamada multiplicar que tome dos números como parámetros y devuelva su producto.
+
+Medio: Crea una función es_par que tome un número como parámetro y devuelva True si el número es par, y False en 
+    caso contrario.
+
+Difícil: Escribe una función contar_vocales que tome una cadena como parámetro y devuelva el número total de vocales
+    (a, e, i, o, u) en esa cadena.
+
+Intenta resolver estos ejercicios y comparte tus soluciones cuando estés listo.
+
+
