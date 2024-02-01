@@ -1,65 +1,44 @@
-Las funciones en Python son bloques de código reutilizables que realizan una tarea específica. Las funciones ayudan 
-    a segmentar tu programa en partes más pequeñas y manejables, y a evitar la repetición de código.
+Las funciones en Python son bloques de código que se organizan y utilizan para realizar una 
+acción específica. Son útiles para dividir tu programa en partes más pequeñas y manejables, para evitar 
+la repetición de código y para mejorar la legibilidad y el mantenimiento.
 
-Características de las funciones en Python:
+Características Básicas de las Funciones en Python:
 
-1.- Definición de una Función: Se utiliza la palabra clave def seguida del nombre de la función y paréntesis. 
-Los parámetros (si los hay) van dentro de los paréntesis.
+Definición de Funciones:
 
-def mi_funcion():
-    # Código de la función
+*Se definen utilizando la palabra clave "def" seguida del nombre de la función y paréntesis ().
 
-2.- Parámetros y Argumentos: Las funciones pueden tener parámetros, que son variables que se pasan a la función 
-    y que la función puede utilizar.
+*El código dentro de la función debe estar indentado.
 
-def saludar(nombre):
-    print(f"Hola, {nombre}!")
+*Por ahora, consideraremos funciones sin parámetros y sin valores de retorno (return).
 
-3.- Return: Una función puede devolver un valor usando la palabra clave return.
+Llamada a Funciones:
 
-def sumar(a, b):
-    return a + b
-
-4.- Llamada a una Función: Se realiza utilizando el nombre de la función seguido de paréntesis. Si la función requiere
-parámetros, se pasan dentro de los paréntesis.
-
-resultado = sumar(5, 3)
-print(resultado)  # Imprime 8
-
-5.- Valores Predeterminados para Parámetros: Puedes asignar valores predeterminados a los parámetros, que se usarán si 
-no se pasa un argumento para ese parámetro.
-
-def saludar(nombre="mundo"):
-    print(f"Hola, {nombre}!")
-
-Ejemplos Prácticos:
-
-1.- Una Función Simple:
-
-def imprimir_mensaje():
-    print("¡Estoy aprendiendo Python!")
-
-2.- Función con Parámetros:
-
-def elevar_al_cuadrado(numero):
-    return numero * numero
-
-3.- Función con Parámetros Predeterminados:
-
-def describir_animal(animal="gato"):
-    print(f"Mi animal favorito es el {animal}.")
+Una función se ejecuta cuando se la llama por su nombre seguido de paréntesis.
+Las funciones deben ser definidas antes de ser llamadas.
+Ejemplo Básico de una Función:
 
 
-Ejercicios para ti:
+##################################
+def saludo():
+    print("Hola, ¿cómo estás?")
+### Hasta aca, si solo ejecutamos la funcion, la consola no mostrara nada,pero tampoco errores##
 
-Fácil: Escribe una función llamada multiplicar que tome dos números como parámetros y devuelva su producto.
+### Pero si hacemos una Llamada a la función, esta mostrara el bloque de codigo o todo lo que se
+### encuentre dentro de ella##
 
-Medio: Crea una función es_par que tome un número como parámetro y devuelva True si el número es par, y False en 
-    caso contrario.
+saludo() ##esto es un llamado a la funcion. La consola mostrara "Hola, ¿cómo estas?"
 
-Difícil: Escribe una función contar_vocales que tome una cadena como parámetro y devuelva el número total de vocales
-    (a, e, i, o, u) en esa cadena.
-
-Intenta resolver estos ejercicios y comparte tus soluciones cuando estés listo.
+Este ejemplo muestra una función simple llamada saludo que, cuando se llama, imprime un mensaje.
 
 
+Ejercicios Prácticos:
+
+Fácil: Define una función llamada imprimir_mensaje que imprima el mensaje "Aprendiendo Python". 
+    Luego, llama a esta función.
+
+Medio: Escribe una función llamada imprimir_cuadrados que imprima los cuadrados de los números 
+    del 1 al 5. Llama a la función para que se ejecute.
+
+Difícil: Crea una función imprimir_tabla que imprima la tabla de multiplicar del 2 (hasta 2x10). 
+    Luego, llama a esta función para que muestre la tabla.
