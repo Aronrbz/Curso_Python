@@ -1,34 +1,42 @@
-# # Ejercicios
-# # Fácil: Escribe una función describir_persona que tome un nombre y una edad (como parámetros posicionales) 
-# #     y los imprima.
+# Ejercicios:
 
-# def describir_persona(nombre, edad):
-#     print(f"Nombre: {nombre}, Edad: {edad}")
-
-# describir_persona("Alice", 30)
-
-# # Medio: Crea una función crear_perfil que tome un nombre y luego un número variable de argumentos (*args) 
-# #     representando los intereses de la persona. La función debe imprimir el nombre y los intereses.
-
-# def crear_perfil(nombre, *intereses):
-#     print(f"Nombre: {nombre}")
-#     print("Intereses:")
-#     for interes in intereses:
-#         print(f"- {interes}")
-
-# crear_perfil("Alice", "Leer", "Programar", "Caminar")
+# Fácil: Escribe una función sumar que tome dos parámetros, num1 y num2, y que imprima la suma de estos números.
 
 
+#opcion 1
+num1 = int(input("Ingrese un numero: "))
+num2 = int(input("Ingrese otro numero: "))
 
-# # Difícil: Desarrolla una función configurar_perfil que tome un nombre y luego varios argumentos con palabras  
-# #     clave (**kwargs) para detalles adicionales como 'ocupación', 'ciudad', etc. La función debe imprimir todos  
-# #     los detalles del perfil.
+def sumar(num1, num2):
+    print(num1 + num2)
+
+sumar(num1, num2)
+
+#opcion 2
+def sumar(num1, num2):
+    print(num1 + num2)
+
+sumar(8, 3)
 
 
-# def configurar_perfil(nombre, **detalles):
-#     print(f"Perfil de {nombre}:")
-#     for clave, valor in detalles.items():
-#         print(f"{clave.capitalize()}: {valor}")
+# Medio: Crea una función saludar_persona que tome un parámetro nombre y otro hora_del_dia 
+#     (por ejemplo, "mañana", "tarde", "noche") y que imprima un saludo apropiado, como "Buenos días, Juan".
 
-# configurar_perfil("Bob", ocupacion="Desarrollador", ciudad="Ciudad Gótica", edad=35)
+def saludar_persona(nombre, hora_del_dia):
+    if hora_del_dia == "mañana":
+        print("Buenos días", nombre)
+    elif hora_del_dia == "tarde":
+        print("Buenas tardes", nombre)
+    else:
+        print("Buenas Noches", nombre)
 
+# ## Aca, podemos ir cambiando los argumentos, y estos contestaran a la hora del dia que escribamos
+saludar_persona("Carlos", "noche")
+
+# Difícil: Haz una función imprimir_informacion que tome tres parámetros: nombre, edad y ciudad, y que imprima 
+#     una oración con esta información, como "Soy Ana, tengo 25 años y vengo de Madrid".
+
+def imprimir_informacion(nombre, edad, ciudad):
+    print(f"Soy {nombre}, tengo {edad} años y vengo de {ciudad}.")
+
+imprimir_informacion("Ana", 25, "Madrid")

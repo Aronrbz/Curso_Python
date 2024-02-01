@@ -1,21 +1,31 @@
-# Fácil: Escribe una función llamada multiplicar que tome dos números como parámetros y devuelva su producto.
+# Ejercicios Prácticos:
 
-# def multiplicar(a, b):
-#     return a * b
+# Fácil: Define una función llamada imprimir_mensaje que imprima el mensaje "Aprendiendo Python". 
+#     Luego, llama a esta función.
 
-# # Medio: Crea una función es_par que tome un número como parámetro y devuelva True si el número es par, y False 
-# #     en caso contrario.
+def imprimir_mensaje():
+    print("Aprendiendo Python")
 
-# def es_par(numero):
-#     return numero % 2 == 0
+imprimir_mensaje()
 
-#  Difícil: Escribe una función contar_vocales que tome una cadena como parámetro y devuelva el número total de 
-#     vocales (a, e, i, o, u) en esa cadena.
+# Medio: Escribe una función llamada imprimir_cuadrados que imprima los cuadrados de los números 
+#     del 1 al 5. Llama a la función para que se ejecute.
 
-# def contar_vocales(cadena):
-#     contador = 0
-#     vocales = "aeiouAEIOU"
-#     for letra in cadena:
-#         if letra in vocales:
-#             contador += 1
-#     return contador
+def imprimir_cuadrados():
+    print("El cuadrado de 1 es: ", 1**2)
+    print("El cuadrado de 2 es: ", 2**2)
+    print("El cuadrado de 3 es: ", 3**2)
+    print("El cuadrado de 4 es: ", 4**2)
+    print("El cuadrado de 5 es: ", 5**2)
+
+imprimir_cuadrados()
+
+# Difícil: Crea una función imprimir_tabla que imprima la tabla de multiplicar del 2 (hasta 2x10). 
+#     Luego, llama a esta función para que muestre la tabla.
+
+def imprimir_tabla():
+    for i in range(1,11):
+        multi = 2*i
+        print(f"2 x",i,"=", multi )
+
+imprimir_tabla()
