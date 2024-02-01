@@ -1,0 +1,51 @@
+Tema 22:
+Argumentos Nombrados
+Los argumentos nombrados (también conocidos como argumentos por palabra clave) en las funciones de Python permiten 
+pasar argumentos a una función especificando el nombre del parámetro, lo que hace que el código sea más claro y legible.
+
+Esta característica es especialmente útil cuando una función tiene varios parámetros y quieres especificar solo algunos 
+de ellos, omitiendo los demás o cuando la función tiene argumentos opcionales y deseas pasarlos en un orden diferente 
+al definido en la declaración de la función.
+
+Características de los Argumentos Nombrados:
+Claridad                    : Al utilizar argumentos nombrados, el propósito de cada valor es claro en la llamada de la 
+                        función.
+Flexibilidad en el Orden    : Puedes cambiar el orden de los argumentos al llamar a una función sin afectar el 
+                        comportamiento del programa.
+Uso con Argumentos Opcionales: Facilita el uso de argumentos opcionales, permitiéndote especificar solo aquellos que 
+                        necesitas.
+
+Ejemplos:
+
+1.-Función con Múltiples Parámetros:
+
+def registrar_usuario(nombre, edad, ciudad):
+    print(f"Nombre: {nombre}, Edad: {edad}, Ciudad: {ciudad}")
+
+registrar_usuario(edad=25, nombre="Carlos", ciudad="Bogotá")
+
+Aquí, el orden de los argumentos en la llamada de la función es diferente al de la definición, pero el programa 
+funciona correctamente debido al uso de argumentos nombrados.
+
+
+2.- Combinación con Argumentos Opcionales:
+
+def crear_producto(nombre, precio, categoria="General"):
+    print(f"Producto: {nombre}, Precio: {precio}, Categoría: {categoria}")
+
+crear_producto(precio=1500, nombre="Cuaderno")
+
+En este ejemplo, se especifica el valor de precio antes que el de nombre, lo cual es posible gracias a los argumentos 
+nombrados.
+
+
+Ejercicios
+Fácil   : Define una función mostrar_informacion que tome tres parámetros: nombre, profesion y empresa. Luego, llama a 
+    esta función usando argumentos nombrados, especificando solo nombre y empresa.
+
+Medio   : Escribe una función configurar_alarma que acepte tres parámetros: hora, minutos y sonido, donde sonido tiene 
+    un valor predeterminado. Llama a la función especificando minutos y sonido, omitiendo hora.
+
+Difícil : Crea una función preparar_bebida que tenga tres parámetros: tipo, azucar y leche, donde azucar y leche son 
+    argumentos opcionales con valores predeterminados. Llama a esta función pasando tipo como argumento posicional y 
+    modificando el valor predeterminado de leche mediante un argumento nombrado.
