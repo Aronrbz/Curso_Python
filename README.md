@@ -79,7 +79,7 @@ para ejecutar nuestras lineas de codigo, una ves escribamos nuestro codigo en py
 
 ![image](https://github.com/Aronrbz/Curso_Python/assets/101678799/8c161bce-c81e-4401-9fed-e1c21d61bb35)
 
-esto va a abrir en la aprte inferior una consola y va a arrojar el resultado esperado y el codigo escrito en python.
+esto va a abrir en la parte inferior una consola y va a arrojar el resultado esperado y el codigo escrito en python.
 
 
     Python en la Vida Cotidiana: Analítica de Datos, Automatización, entre otros.
