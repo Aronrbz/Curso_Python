@@ -10,6 +10,16 @@ Definición: Se definen en la declaración de la función, asignando un valor pr
 Llamada a Funciones: Al llamar a una función, puedes omitir los argumentos opcionales, o bien pasarles un valor 
     diferente al predeterminado.
 
+cuando defines una función con argumentos opcionales (es decir, argumentos que tienen un valor predeterminado), estos 
+    deben colocarse después de los argumentos que no tienen un valor predeterminado en la definición de la función.
+
+    por ejemplo 
+
+def mostrar_informacion(nombre, empresa, profesion="Analista")
+
+(aca el argumento opcional debe estar a la derecha del resto de los parametros. El o los argumentos opciones deben 
+ser los ultimos, de izquierda a derecha)
+
 
 Ejemplos Básicos
 1.- Función con un Argumento Opcional:

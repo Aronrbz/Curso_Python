@@ -1,0 +1,12 @@
+Tema 23: xargs en Funciones
+El término "xargs" no es un término oficial en Python, pero se usa comúnmente para referirse a la capacidad de una 
+función para aceptar un número arbitrario de argumentos posicionales. Esto se logra mediante el uso del 
+asterisco * antes del nombre del parámetro, que entonces se convierte en una tupla que contiene todos los argumentos 
+posicionales pasados a la función.
+
+Características de *args (xargs):
+Flexibilidad: Permite que una función acepte cualquier número de argumentos posicionales sin necesidad de definirlos 
+todos explícitamente en la declaración de la función.
+
+Uso de Tuplas: Los argumentos pasados a través de *args se almacenan en una tupla, lo que significa que puedes 
+acceder a ellos y manipularlos como lo harías con cualquier otra tupla en Python.
