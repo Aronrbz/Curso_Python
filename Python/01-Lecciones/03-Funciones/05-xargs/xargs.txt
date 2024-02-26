@@ -1,12 +1,47 @@
-Tema 23: xargs en Funciones
-El término "xargs" no es un término oficial en Python, pero se usa comúnmente para referirse a la capacidad de una 
-función para aceptar un número arbitrario de argumentos posicionales. Esto se logra mediante el uso del 
-asterisco * antes del nombre del parámetro, que entonces se convierte en una tupla que contiene todos los argumentos 
-posicionales pasados a la función.
+Tema 23: *args en Funciones
+En Python, *args se utiliza en la definición de una función para permitir que acepte un número variable de argumentos 
+posicionales. Aunque internamente *args recopila los argumentos adicionales en una tupla (esto lo veremos más adelante
+en el tema tuplas), la idea principal es que puedes pasar cualquier cantidad de argumentos a la función sin necesidad 
+de especificar cada uno individualmente en la definición de la función.
 
-Características de *args (xargs):
-Flexibilidad: Permite que una función acepte cualquier número de argumentos posicionales sin necesidad de definirlos 
-todos explícitamente en la declaración de la función.
+Características Principales de *args:
+Flexibilidad en Número de Argumentos: Una función puede aceptar cualquier cantidad de argumentos posicionales 
+gracias a *args.
 
-Uso de Tuplas: Los argumentos pasados a través de *args se almacenan en una tupla, lo que significa que puedes 
-acceder a ellos y manipularlos como lo harías con cualquier otra tupla en Python.
+Uso en la Función: Dentro de la función, tratas *args como una colección de argumentos sobre los cuales puedes iterar.
+
+Ejemplos Simplificados
+Dado el contexto de y avance de nuestro curso, aquí hay ejemplos simplificados que muestran el uso de *args 
+
+1.- *Función con args:
+
+def imprimir_valores(*valores):
+    for valor in valores:
+        print(valor)
+
+imprimir_valores(10, 20, 30, 40)  # Imprime cada número en una línea nueva
+
+Este ejemplo demuestra cómo *args permite pasar múltiples argumentos a una función.
+
+
+2.- *Sumar Números con args:
+
+def sumar(*numeros):
+    total = 0
+    for numero in numeros:
+        total += numero
+    print("Total:", total)
+
+sumar(5, 10, 15)  # Imprime la suma de los números
+
+
+Ejercicios
+
+Fácil: Escribe una función mostrar_mensajes que use *args para aceptar varios mensajes como argumentos y los imprima 
+uno tras otro.
+
+Medio: Define una función multiplicar_numeros que utilice *args para recibir varios números y calcule el producto de 
+todos ellos. Imprime el resultado.
+
+Difícil: Crea una función min_max que utilice *args para tomar varios números y luego imprima el menor y el mayor de 
+esos números.
