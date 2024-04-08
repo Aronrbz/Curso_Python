@@ -1,0 +1,57 @@
+¿Qué son los **kwargs?
+**kwargs es una convención para pasar argumentos de palabra clave (key-value pairs) a una función.
+
+Los argumentos pasados a través de **kwargs son accesibles dentro de la función como un diccionario con los nombres de 
+    los argumentos como claves y los valores correspondientes como valores del diccionario.
+
+Es útil cuando quieres permitir que una función acepte una cantidad variable de argumentos de palabra clave.
+
+
+Los **kwargs en Python permite a las funciones aceptar un número indefinido de argumentos de palabra clave. 
+Esto significa que puedes pasar a una función un diccionario de argumentos con nombres y valores, lo cual es 
+extremadamente útil para manejar argumentos que pueden o no estar presentes. Los **kwargs funcionan de manera similar 
+a *args, pero mientras que *args permite pasar un número variable de argumentos posicionales a una función, **kwargs 
+captura argumentos nombrados en un diccionario.
+
+
+Ejemplos Explicados
+
+def producto(**datos):
+    print(datos)
+
+producto(id="SP1085", name="teléfono celular", desc="esto es un teléfono móvil")
+
+Qué hace: La función producto imprime el diccionario datos que recibe como argumentos de palabra clave.
+Qué imprime: {'id': 'SP1085', 'name': 'teléfono celular', 'desc': 'esto es un teléfono móvil'}.
+Relación con **kwargs: Este ejemplo demuestra cómo se capturan los argumentos de palabra clave en un diccionario. 
+id, name, y desc son las claves, y sus valores correspondientes son "SP1085", "teléfono celular", y 
+"esto es un teléfono móvil".
+
+
+Ejemplo 2
+
+def producto(**datos):
+    print(datos["id"], datos["name"])
+
+producto(id="SP1085", name="Smartwatch", desc="esto es un reloj")
+
+Qué hace: La función producto imprime específicamente los valores asociados a las claves "id" y "name" dentro del
+    diccionario datos.
+
+Qué imprime: SP1085 Smartwatch.
+
+Relación con **kwargs: Este ejemplo muestra cómo puedes acceder a valores específicos dentro del diccionario **kwargs 
+    usando sus claves. Aunque se pasan tres argumentos de palabra clave, solo se accede e imprime el id y el name.
+
+
+Ejercicios
+
+Fácil: Define una función imprimir_detalles que use **kwargs para aceptar detalles de un libro como título, 
+    autor y año, e imprima estos detalles en un formato amigable.
+
+Medio: Crea una función calcular_precio que utilice **kwargs para aceptar el precio base de un producto, y opcionalmente, 
+    un descuento en porcentaje. La función debe calcular y mostrar el precio final después del descuento.
+
+Difícil: Escribe una función crear_perfil_usuario que acepte un nombre obligatorio y luego cualquier número de detalles 
+    adicionales sobre el usuario (como email, ciudad, edad) usando **kwargs. La función debe imprimir el perfil completo 
+    del usuario.
