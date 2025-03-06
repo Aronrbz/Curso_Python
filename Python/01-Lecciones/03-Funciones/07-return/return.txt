@@ -1,0 +1,50 @@
+Tema 25: return en Funciones
+En Python, la palabra clave return se usa dentro de una función para devolver un valor al lugar donde la función fue llamada. 
+Esto permite que el resultado de una función sea almacenado en una variable o utilizado en otros cálculos.
+
+
+Características de return:
+
+Permite devolver un valor desde una función:
+    Cuando una función tiene return, devuelve un resultado en lugar de solo imprimirlo.
+
+Una función puede devolver cualquier tipo de dato:
+    Puede devolver números, cadenas, booleanos, incluso el resultado de una operación.
+
+Cuando return se ejecuta, la función finaliza:
+    Todo lo que esté después de un return dentro de una función no se ejecutará.
+
+
+Si una función no tiene return, devuelve None por defecto.
+
+
+Ejemplos Explicados
+Ejemplo 1: Función con return que devuelve un número
+
+
+def obtener_numero():
+    return 42
+
+resultado = obtener_numero()
+print(resultado)  # Imprime: 42
+Aquí, la función devuelve el número 42, que se almacena en la variable resultado y luego se imprime.
+
+
+Ejemplo 2: Uso de return en una operación matemática
+
+def sumar(a, b):
+    return a + b
+
+suma = sumar(10, 5)
+print(f"La suma es: {suma}")  # Imprime: La suma es: 15
+
+
+Ejemplo 3: return con una cadena de texto
+
+def obtener_saludo(nombre):
+    return f"Hola, {nombre}!"
+
+mensaje = obtener_saludo("Ana")
+print(mensaje)  # Imprime: Hola, Ana!
+
+Aquí, la función devuelve una cadena que puede ser usada en otras partes del código.

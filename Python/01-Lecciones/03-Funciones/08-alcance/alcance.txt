@@ -1,0 +1,69 @@
+Tema 26: Alcance de las Variables en Python:
+
+El alcance en Python determina en qué partes del código se puede acceder a una variable. Hay variables locales y globales, 
+y dependiendo de dónde se declaren, podrán ser utilizadas en distintos lugares del código.
+
+
+Tipos de Alcance en Python:
+
+Ámbito Local (Local Scope)
+    Una variable declarada dentro de una función solo existe dentro de esa función.
+    No se puede acceder a ella desde fuera de la función.
+
+Ámbito Global (Global Scope)
+    Una variable declarada fuera de cualquier función puede ser usada en todo el código.
+    Sin embargo, dentro de una función, no puedes modificar una variable global directamente, a menos que uses la palabra clave global.
+
+
+Ejemplos Explicados:
+
+-----------------------------------------------------------------------------------------------------------------
+Ejemplo 1: Variable de Ámbito Local
+
+def mostrar_mensaje():
+    mensaje = "Hola, soy una variable local"
+    print(mensaje)
+
+mostrar_mensaje()
+# print(mensaje)  # Esto daría un error, porque "mensaje" solo existe dentro de la función
+
+✅ Explicación:
+La variable mensaje solo existe dentro de la función mostrar_mensaje(). Si intentas imprimirla fuera de la función, obtendrás un error.
+
+-----------------------------------------------------------------------------------------------------------------
+Ejemplo 2: Variable de Ámbito Global
+
+mensaje = "Hola, soy una variable global"
+
+def mostrar_mensaje():
+    print(mensaje)  # Se puede acceder a la variable global
+
+mostrar_mensaje()
+print(mensaje)  # También se puede acceder fuera de la función
+
+✅ Explicación:
+Aquí, mensaje se declaró fuera de la función, por lo que puede ser accedida en cualquier parte del código.
+
+-----------------------------------------------------------------------------------------------------------------
+Ejemplo 3: Modificar una Variable Global Dentro de una Función (global)
+
+contador = 0  # Variable global
+
+def incrementar():
+    global contador  # Indicamos que vamos a modificar la variable global
+    contador += 1
+    print(f"Contador dentro de la función: {contador}")
+
+incrementar()
+print(f"Contador fuera de la función: {contador}")
+
+✅ Explicación:
+
+Sin global, Python trataría de crear una variable nueva dentro de la función en lugar de modificar contador.
+Usamos global contador para indicar que queremos modificar la variable global.
+
+📌 Resumen
+Las variables locales existen solo dentro de una función.
+Las variables globales pueden ser accedidas en cualquier parte del código.
+Para modificar una variable global dentro de una función, debes usar global.
+Si intentas modificar una variable global sin global, Python creará una nueva variable local en su lugar.
