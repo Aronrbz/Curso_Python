@@ -1,0 +1,82 @@
+📌 Tema 27: Listas en Python
+
+Las listas en Python son estructuras de datos que permiten almacenar múltiples valores en una sola variable. Son ordenadas, mutables y pueden contener 
+diferentes tipos de datos.
+
+
+📌 Características de las Listas:
+
+✅ Se definen usando corchetes [].
+✅ Los elementos pueden ser de cualquier tipo (int, float, str, bool, etc.).
+✅ Son ordenadas: Cada elemento tiene un índice (posición dentro de la lista).
+✅ Son mutables: Se pueden modificar después de ser creadas.
+
+
+📌 Sintaxis Básica
+
+📍 Crear una lista:
+
+numeros = [1, 2, 3, 4, 5]
+nombres = ["Ana", "Luis", "Carlos"]
+mixta = [25, "Python", True, 3.14]
+
+
+📌 Sumar Listas
+
+Se pueden combinar listas utilizando el operador +:
+
+numeros = [1, 2, 3, 4, 5]
+nombres = ["Ana", "Luis", "Carlos"]
+alfaNumerico = numeros + nombres
+
+print(alfaNumerico)
+
+📌 Salida:
+[1, 2, 3, 4, 5, 'Ana', 'Luis', 'Carlos']
+
+
+📌 Crear Listas con Elementos Repetidos
+
+Si necesitas crear una lista con múltiples elementos repetidos, puedes usar *:
+
+ceros = [0] * 10  # Lista con 10 ceros
+unos_y_ceros = [0, 1] * 5  # Alternando 0 y 1 cinco veces
+
+print(ceros)        # [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+print(unos_y_ceros) # [0, 1, 0, 1, 0, 1, 0, 1, 0, 1]
+
+
+📌 Crear Listas con range()
+Puedes generar una lista de números en un rango específico usando range() y list():
+
+rango = list(range(1, 11))
+print(rango)  
+
+📌 Salida:
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+
+📌 Convertir un String en Lista
+Puedes convertir un string en una lista de caracteres:
+
+chars = list("Hola Mundo")
+print(chars)
+
+📌 Salida:
+
+['H', 'o', 'l', 'a', ' ', 'M', 'u', 'n', 'd', 'o']
+
+
+📌 Lo que Veremos en Temas Futuros sobre Listas
+En otros temas más adelante, exploraremos: 
+
+✅ Cómo manipular listas
+✅ Cómo desempaquetar listas
+✅ Cómo iterar listas
+✅ Cómo buscar elementos
+✅ Cómo agregar y eliminar elementos
+✅ Cómo ordenar listas
+✅ Listas por comprensión
+
+Por ahora, solo nos enfocaremos en lo básico de las listas.
